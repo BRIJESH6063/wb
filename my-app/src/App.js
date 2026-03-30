@@ -13,8 +13,10 @@ import React from 'react';
 // import Style from './appstyle.module.css' ;
 // import Form from './components/Form';
 // import Routing from './components/Routing';
-import Product from './components/Product' ;
+// import Product from './components/Product' ;
 // import LifeCycleA from './components/LifeCycleA';
+// import Reducer from './components/Reducer';
+// import Memo from './components/Memo';
 import './appstyle.css' ;
 import './App.css';
 
@@ -99,9 +101,14 @@ function App() {
 
         {/* <LifeCycleA /> */}
 
-        <div>
+        {/* <div>
           <Product />
-        </div>
+        </div> */}
+
+        <>
+          {/* <Reducer /> */}
+          {/* <Memo /> */}
+        </>
 
 
     </div> 

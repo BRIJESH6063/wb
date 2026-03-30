@@ -1,0 +1,13 @@
+npx create-react-app@latest client
+
+material ui installation --
+npm install @mui/material @emotion/react @emotion/styled
+
+import {AppBar, Toolbar} from '@mui/material'
+
+npm install @react-oauth/google@latest
+
+npm i jwt-decode
+
+// ---> api
+npm i axios
