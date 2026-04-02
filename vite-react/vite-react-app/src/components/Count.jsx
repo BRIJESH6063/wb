@@ -49,12 +49,17 @@ export default function Count() {
     setCount(count+1) ;
   } 
 
+  function decreaseCount() {
+    setCount(count-1) ;
+  }
+
   return (
     <>
       <h1>Hello Coder Army!</h1>
       <div className="counter">
         <h2>Count : { count }</h2>
         <button onClick={increaseCount}> Increase Count </button>
+        <button onClick={decreaseCount}> Decrease Count </button>
       </div>
     </>
   )
