@@ -1,0 +1,68 @@
+
+body {
+  background-color: slategrey ;
+}
+
+#container {
+  height: 300px ;
+  width: 500px ;
+  background-color: azure ;
+
+  position: relative ;
+}
+
+#circle {
+  height: 200px ;
+  width: 200px ;
+  border-radius: 50% ;
+  background-color: red ;
+
+  position: absolute ;
+  top: 50px ;
+  left: 150px ;
+}
+
+
+
+#denmark-container {
+  height: 300px ;
+  width: 500px ;
+  background-color: yellow ;
+
+  position: relative ;
+}
+
+#top-left, #bottom-left {
+  background-color: blue ;
+  height: 125px ;
+  width: 125px ;
+}
+
+#top-right, #bottom-right {
+  height: 125px ;
+  width: 325px ;
+  background-color: blue ;
+
+  position: absolute ;
+  top: 0px ;
+  right: 0px ;
+}
+
+#bottom-left {
+  /* background-color: blue ;
+  height: 125px ;
+  width: 125px ; */
+
+  position: absolute ;
+  top: 175px ;
+}
+
+#bottom-right {
+  /* background-color: blue ;
+  height: 125px ;
+  width: 325px ; */
+
+  position: absolute ;
+  top: 175px ;
+  left: 175px ;
+}

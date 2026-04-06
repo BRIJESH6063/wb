@@ -1,0 +1,60 @@
+/* REMOVE ALL DEFAULT MARGINS */
+/*
+* {
+  margin: 0px ;
+  padding: 0px ;
+}
+*/
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+  
+}
+
+/* BLOCK-LEVEL ELEMENT */
+h1 {
+  background-color: orange  ;
+  padding: 10px ;
+  width: 400px ;
+  height: 300px ;
+  padding: 10px ;
+  margin: 20px ;
+  /* display: inline ;  */ /* Makes behave like inline-element (height width INVALID like in span)*/
+  /* display: block ; */ /* Makes behave like block-element (height width VALID like in h1 and h2)*/
+  /* display: inline-block ; */ /* behaves like both [inline+height/width]*/
+
+  /* box-sizing: content-box ; */ /* content=[height x width] --> border --> margin */
+  /* box-sizing: border-box ; */ /* content = [ [(height-border) x (width-border)] + border ] --> margin */
+}
+
+h2 {
+  background-color: pink ;
+  padding: 10px ;
+  /* display: inline ; */
+  /* display: block ; */ /* Makes behave like block-element (height width VALID like in h1 and h2)*/
+  /* display: inline-block ; */ /* behaves like both */
+}
+
+/* INLINE-LEVEL ELEMENT */
+span {
+  background-color: orange ;
+  /* -- doesnot work in inline-element
+  width: 40px ;
+  height: 30px ; */
+  padding-left: 20px ; 
+  /* works for only Horizontal (Vertical padding is visible but it does not occupy space - NOT ACTUAL PADDING)*/
+  margin-left: 20px ;  /* works for only Horizontal (Vertical is 'UNAFFECTIVE')*/
+
+  
+}
+
+
+
+p {
+  background-color: aqua ;
+  padding: 10px ;
+}
+

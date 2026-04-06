@@ -1,0 +1,73 @@
+/*
+PRIORITY --> inline(high) <<---- Internal <<---- External
+--------------- WRRRROOOONNNGGGG ------------------------
+
+ORDERING of Internal and External CSS decides
+<style>
+  h1{
+    background-color: red ;
+  }
+</style>
+<link rel="stylesheet" href="../CSS/cascading.css">
+FINAL STYLING ---->> External
+
+Reverse ORDER --->> Internal will work
+*/
+
+
+/*
+
+<style>INTERNAL CSS</style>
+<link rel="stylesheet" href="../CSS/cascading.css"> EXTERNAL CSS
+
+IS EQUAL TO 
+
+<style>INTERNAL CSS</style>
+<style>EXTERNAL CSS</style>
+
+*/
+
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+  
+}
+
+h1 {
+  background-color: aqua ;
+}
+
+/*
+CSS PRIORITY ---> most specific CSS applied
+Class(multiple element can have same class) <<< Id(unique for every element)
+
+Hence ID is more SPECIFIC/PRIOR than CLASS
+
+*/
+
+/*
+Priority Order --------------
+1. inline CSS
+2. Id 
+3. Class
+4. Tag(like h1, h2, p)
+*/
+
+/*
+#first {
+  background-color: pink ;
+}
+
+.classA {
+  background-color: yellowgreen ;
+}
+*/
+
+h2 {
+  background-color: antiquewhite !important ;
+}
+
+/* background-color: antiquewhite !important ; ---> OVERRIDES even INLINE CSS */

@@ -1,0 +1,80 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  background-color: rgb(72, 71, 71) ;
+  height: 100vh ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  gap: 20px ;
+
+  perspective: 800px ; /* include 3D animation eg. transform: translateZ(200px) ; */
+}
+
+.container {
+  width: 250px ;
+  height: 250px ;
+  background-color: rgb(169, 234, 95) ;
+  cursor: pointer ;
+  border-radius: 5px ;
+
+  /* transition-property: background-color, width, height ; */
+  /*
+  transition-property: all ;
+  transition-duration: 1s ;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275) ; 
+  */
+  /*
+    transition-timing-function: ['ease', 'ease-in', 'ease-out', 'ease-in-out', 'linear'] ;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  */
+
+  /* SHORT HAND TRANSITION PROPERTY */
+  transition: all 1s ease-in 0s ;
+  /* transition: all(property) 1s(duration) ease-in(name) 1s(delay) ; */
+
+  animation-name: moving ;
+  animation-duration: 2s ;
+  animation-iteration-count: infinite ;
+  animation-timing-function: linear ;
+}
+
+.container:hover {
+  /* 
+  width: 400px ;
+  height: 400px ;
+  background-color: rgb(234, 167, 91) ; 
+  */
+
+  /* transform: scale(1.4) ; */ /* 1.4 times scaling WITHOUT affecting other element's CSS*/
+  /* transform: scaleX(1.4) ; SCALING in X dimension only */
+  /* transform: scaleY(1.4) ; SCALING in Y dimension only */
+
+  /* transform: translateY(200px) ; */
+  /* transform: translateZ(200px) ; */ /* doesn't work in 2D screen, 'perspective' property required */
+  /* transform: translate(200px, 400px) ; */ /* 200px(right) 400px(down) */
+
+  /* transform: rotate(90deg); */
+
+  /* transform: skew(30deg) ; */ /* transform: skew(-30deg) ; */
+
+  /* transform: rotateX(90deg) ; */
+}
+
+@keyframes moving {
+  from {
+    transform: rotate(0deg) ;
+  }
+  to {
+    transform: rotate(360deg) ;
+  }
+}

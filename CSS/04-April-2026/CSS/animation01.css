@@ -1,0 +1,96 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  height: 100vh ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+}
+
+.container {
+  padding: 30px ;
+
+  position: relative ;
+}
+
+/*
+animation-timing-function: ease-in ; 
+['ease', 'ease-in', 'ease-out', 'ease-in-out', 'step-start', 'step-end', 'linear']
+
+cubic-bezier(0.075, 0.82, 0.165, 1)
+
+
+
+*/
+
+.box {
+  height: 100px ;
+  width: 200px ;
+  background-color: orange ;
+  animation-name: moving ;
+  animation-iteration-count: infinite ;
+  /* animation-timing-function: ease-in-out ; */
+  animation-timing-function: linear ;
+  /* animation-direction: alternate ; */ /* LEFT->RIGHT then RIGHT->LEFT */
+  animation-delay: 1s ;
+  /* animation-fill-mode: forwards ;  */
+  /* 
+    farwards(moves and stop at final position)
+    backwords(moves and stop at initial position)
+    none
+    both
+  */
+  animation-duration: 3s ;
+
+  position: absolute ;
+}
+
+/* 
+@keyframes moving {
+  from {
+    background-color: orange ;
+    top: 10px ;
+    left: 10px ;
+  } 
+  to {
+    background-color: yellow ;
+    top: 10px ;
+    left: 1250px ;
+  }
+} 
+  
+*/
+
+@keyframes moving {
+  0% {
+    background-color: orange ;
+    top: 30px ;
+    left: 30px ;
+  } 
+  25% {
+    background-color: red ;
+    top: 30px ;
+    left: 1450px ;
+  }
+  50% {
+    background-color: yellow ;
+    top: 600px ;
+    left: 1450px ;
+  } 
+  75% {
+    background-color: greenyellow ;
+    top: 600px ;
+    left: 30px ;
+  }
+  100% {
+    background-color: orange ;
+    top: 30px ;
+    left: 30px ;
+  } 
+}
