@@ -1,0 +1,26 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  height: 100vh ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+}
+
+.container {
+  width: 400px ;
+  height: 400px ;
+  background-color: aqua ;
+
+  /* overflow: hidden ; */ /* hide rest of content(invisible)*/
+  overflow: scroll ; /* read hidden content by scrolling */
+}

@@ -1,0 +1,87 @@
+* {
+  padding: 0 ;
+  margin: 0 ;
+}
+
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+  background-color: antiquewhite ;
+}
+
+h1 {
+  height: 100px ;
+}
+
+/*
+position: relative ;
+------------------------------
+1. RELATIVE to it's ORIGINAL POSITION
+2. Position is reserved, No other element can take their place
+*/
+
+/* z-index: 10 ; --> (by default 1) to overlap */
+
+h2 {
+  background-color: orange !important ;
+  height: 100px ;
+
+  position: relative ; /* RELATIVE to it's ORIGINAL POSITION */
+  /* bottom: 50px ; */ /* TOP BOTTOM LEFT RIGHT */
+  left: 50px ;
+  bottom: 20px ;
+
+  z-index: 10 ;
+}
+
+
+
+/*
+position: FIXED ;
+------------------------------
+1. FIXED with respect to WINDOW
+2. Position is NOT RESERVED, OTHER element can take their place.
+*/
+
+h3 {
+  background-color: yellow ;
+  height: 50px ;
+
+  position: fixed ;  /* FIXED with respect to WINDOW */
+  top: 0px ;
+  left: 50px ;
+}
+
+h4 {
+  height: 50px ;
+  background-color: aquamarine ;
+
+  position: sticky ; /* STICK to window when h4 is 10px from top when you scroll down */
+  top: 50px ;
+}
+
+/*
+position: absolute ;
+1. find their position with respect to closest ancestor with position: [fixed/sticky/relative]
+2. (h5--->div(position: not defined)---->window(position: not defined)) ANCESTOR  Now with respect to WINDOW 
+3. if div is positioned, ABSOLUTE with respect to div's TOP LEFT RIGHT and BOTTOM
+*/
+
+h5 {
+  background-color: yellowgreen ;
+  height: 40px ;
+  padding: 5px ;
+
+  position: absolute ;
+  top: 0px ;
+  left: 500px ;
+}
+
+p {
+  background-color: yellowgreen ;
+  padding: 20px ;
+
+}

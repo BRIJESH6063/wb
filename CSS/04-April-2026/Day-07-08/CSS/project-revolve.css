@@ -1,0 +1,77 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  background-color: rgb(72, 71, 71) ;
+  height: 100vh ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+}
+
+.container{
+  height: 100vh ;
+  background-color: rgb(51, 51, 52) ;
+
+  /* position: relative ; */
+
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+}
+
+.box{
+  height: 500px ;
+  width: 500px ;
+  background-color: white ;
+
+  border-radius: 50% ;
+
+  /* 
+  position: absolute ;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%, -50%) ; 
+  */
+
+  animation-name: moving ;
+  animation-duration: 2s ;
+  animation-timing-function: linear ;
+  animation-iteration-count: infinite ;
+
+  position: relative ;
+
+}
+
+@keyframes moving {
+  /* 
+  from {
+    transform: rotate(0deg) translateX(300px) rotate(0deg) ;
+  } 
+  to {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg) ;
+  } 
+  */
+  from {
+    transform: rotate(0deg) ;
+  } 
+  to {
+    transform: rotate(360deg) ;
+  } 
+}
+
+.sun{
+  width: 50px ;
+  height: 50px ;
+  background-color: red ;
+  border-radius: 50% ;
+
+  position: absolute ;
+  top: 100px ;
+  left: 100px ;
+}
