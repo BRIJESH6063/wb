@@ -1,0 +1,59 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  background-color: rgb(36, 36, 36) ;
+  height: 100vh ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+}
+
+
+/*
+box-shadow:  yellow ;
+X=[10px RIGHT] Y=[10px BOTTOM] 
+X=[-10px LEFT] Y=[-10px TOP] 
+X=[10px RIGHT] Y=[0px NO-TOP] 
+X=[0px NO-LEFT] Y=[-10px TOP] 
+and so on ..
+
+
+BLUR RADIUS 
+-----------------------------
+box-shadow: 10px 10px 10px yellow ;
+OFFSET-X=[10px RIGHT] OFFSET-Y=[10px BOTTOM] BLUR=[10px]
+
+SPREAD RADIUS -- spread shadow all around(all directions) box
+-------------------------------------------------------------
+box-shadow: 0px 0px 20px 20px yellow ;
+BLUR=[20px] SPREAD=[20px]
+
+INSET (inside-radius)
+-----------------------------
+box-shadow: inset 20px 20px 20px yellow ;
+OFFSET-X=[20px LEFT] OFFSET-Y=[20px TOP] BLUR=[20px]
+
+box-shadow: inset -20px -20px 20px yellow ;
+OFFSET-X=[-20px RIGHT] OFFSET-Y=[-20px DOWN] BLUR=[20px]
+*/
+
+.container {
+  width: 300px ;
+  height: 300px ;
+  background-color: orange ;
+
+  /* box-shadow: 10px 10px yellow ; */
+  /* box-shadow: 10px 10px 10px yellow ; */ /* blur radius */
+  /* box-shadow: 0px 0px 20px 20px yellow ; */
+  /* box-shadow: inset 20px 20px 20px yellow ; */
+  box-shadow: inset -20px -20px 20px yellow ;
+}

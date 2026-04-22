@@ -1,0 +1,51 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+  /* background-color: rgb(142, 192, 235) ; */
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; */
+}
+
+h1 {
+  background-color: pink ;
+}
+
+h2 {
+  background-color: aquamarine ;
+}
+
+ul{
+  background-color: rgb(234, 234, 165) ;
+}
+
+.outer{
+  font-size: 20px ;
+}
+
+.inner {
+  font-size: 2em ;;
+}
+
+/*
+html {
+  font-size: 40px ;
+}
+.rem {
+  font-size: 3rem ;  3*(40px) = 120px 
+}
+*/
+
+/* 
+2em --> 2 times of parent element (means 2*20px=40px)
+2rem --> 2 times of root element (means 2*20px=40px)
+font-size: 2vw --> 2 percent of width size
+*/
+.viewport-width{
+  font-size: 2vw ;
+}
+
+.viewport-height{
+  font-size: 3vh ;
+}
+

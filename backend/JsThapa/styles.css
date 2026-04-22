@@ -1,0 +1,227 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+/* 
+body{ background-color: rgb(187, 217, 158) ; }
+h1 { color: green ; }
+p{ color: rgb(40, 41, 36) ; } 
+.box1 {
+    background-color: rgb(227, 193, 193) ;
+    height: 200px ;
+    color: red ;
+    font-size: 175px  ;
+}
+p {
+    text-align: right ;
+    text-align: center ;
+}
+
+
+
+.first {
+    text-align: center ;  
+    text-align : start(left) || end(right)
+    width: 70% ;
+    text-decoration: none ;
+    underline | overline | none
+    a {
+        text-decoration: none ;
+    }
+}
+
+
+#h1 {
+    font-weight: normal ;
+}
+#h2 {
+    font-weight: bold ;
+}
+#h3 {
+    font-weight: bolder ;
+}
+### range from 100 - 900, > 400 bolder
+#h1 {
+    font-weight: 900 ;
+}
+
+div #one {
+    font-family: arial  ;
+}
+
+div #two {
+    line-height: 50px ;
+    text-transform:  ;
+    capitalize -- first letter of each word CAPITAL,
+       lowercase, uppercase, NONE
+    }
+
+#outer {
+    font-size: 25px ;
+    // also applied on inner, some property do that
+}
+#inner {
+    font-size: 10px ;
+}
+
+#first {
+    height: 100px ;
+    width: 200px;
+    background-color: yellow;
+    padding: 10px ;
+    margin-bottom: 50px ;
+}
+#second {
+    height: 100px ;
+    background-color: greenyellow ;
+}
+
+
+##  BORDER 
+border-width : 2px 
+border-style : solid | dotted | dashed 
+border-color : red
+
+h1 {
+    width: 30% ;
+    background-color: chartreuse ;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: aqua ; 
+    text-align: center ;
+}
+
+.first {
+    width: 40% ;
+    height: 400px ;
+    background-color: red ;
+    border-width: 5px ;
+    border-style: solid ;
+    // dashed solid double 
+    border-color: rgb(149, 19, 19) ; 
+    border-radius: 5px ;
+    margin: 200px 400px ; 
+    // top left
+    text-align: right ;
+}
+
+### border: 2px solid brown ;
+
+.first {
+    width: 150px ;
+    height: 150px ;
+    background-color: rgb(187, 221, 64) ;
+    margin-bottom: 20px ;
+    border: 2px solid rgb(75, 93, 11) ;
+    border-radius: 25% ; 
+    // 50% -- circle
+    padding: 10px 20px 12px 15px ;
+    // top right bottom left --> clockwise
+}
+
+ASSIGNMENT
+.nav {
+    height: 60px ;
+    background-color: rgb(25, 23, 23);
+    color: white ;
+    text-decoration: none ;
+    #logo {
+        font-size: 25px ;
+        color: #f08804 ;
+    }
+    button {
+        background-color: #f08804 ;
+    }
+    a {
+        margin-right: 220px ;
+    }
+}
+
+
+DISPLAY PROPERTY ----
+display: inline | block | inline-block | none 
+div {
+    background-color: aquamarine ;
+    display: inline ;
+}
+button{
+    display: block ;
+}
+
+display: none ---> invisible + no sopace occupied for that shit
+visibility: hidden ----> invisible but space occupied for that shit
+
+Alpha channel --
+opacity -- 0.5
+rgba(255, 0, 0, 0.5) -- 50% opacity
+div {
+    width: 100px ;
+    height: 100px ;
+    background-color: aquamarine;
+    border: 2px solid rgb(137, 214, 21);
+    display: inline-block ;
+}
+
+#box1 {
+    position: static ;
+    top: 10px ; 
+    doesnt work since static 
+}
+
+#box2 {
+    position: relative;
+    top: 100px ;
+    left: 100px;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

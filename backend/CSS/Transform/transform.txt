@@ -1,0 +1,99 @@
+
+
+
+### TRANSTION CSS ---
+
+.div1 {transition-timing-function: linear;}
+.div2 {transition-timing-function: ease;}
+.div3 {transition-timing-function: ease-in;}
+.div4 {transition-timing-function: ease-out;}
+.div5 {transition-timing-function: ease-in-out;}
+
+
+div {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+
+### TRANSFORM CSS ----
+With the CSS transform property you can use the following 2D transformation methods:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+
+
+TRANSLATE CSS ---
+transform: translate(90px); 90px along x-axis
+transform: translate(90px, 70px) ; farward(+x) downward(+y)
+
+SKEWNESS --
+transform: skew(30deg) ;
+
+
+
+ANIMATION CSS ----
+to animate css element -
+
+@keyframe animationFrame {
+    from {
+        font-size: 20px ;
+    }
+    to {
+        font-size: 40px ;
+    }
+}
+
+
+animation-name: AnimationName
+animation-duration : 3s ;
+animation-timing-function : ease-in/linear ;
+animation-delay: 1s ;
+animation-iteration-count: 5 ;
+animation-direction : normal/reverse/alternate/alternate-reverse ;
+
+
+
+% IN ANIMATION ---
+
+@keyframe animationName {
+    0% {}
+    50% {}
+    100% {}
+}
+
+@keyframe animationName {
+    0% {}
+    25% {}
+    50% {}
+    100% {}
+    and so on  ...
+}
+Used for creating loader 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

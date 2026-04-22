@@ -1,0 +1,81 @@
+
+/*
+flex-direction: column ;
+MAIN AXIS ---> along flex-direction
+CROSS AXIS ---> vertical of flex-direction
+
+justify-content center works along MAIN-AXIS
+align-items work along CROSS_AXIS
+*/
+
+.container {
+  background-color: bisque ;
+  height: 95vh ;
+
+  display: flex ;
+  flex-direction: row ; 
+  /* row column column-reverse(4 3 2 1) row-reverse(4 3 2 1) */
+
+  justify-content: center ; 
+  /* start, end, center, space-around([--A----B----C----D--]) space-evenly([---A---B---C---D---])*/
+  /* justify center works along MAIN-AXIS */
+
+  align-items: center ;
+  /* start, end, center, space-around([--A----B----C----D--]) space-evenly([---A---B---C---D---])*/
+  /* align-items work along CROSS_AXIS */
+
+  /* flex-wrap: wrap-reverse ; */
+  /* wrap elements and push them down when width decreases --> RESPONSIVE */
+  /* wrap [(1 2)/(3 4)], no-wrap, wrap-reverse [(3 4)/(1 2)] */
+
+  gap: 30px ;
+  /* display:flex; make boxes no space between them(unless flex-direction:space-around/space-evenly) */
+}
+
+.box {
+  height: 150px ;
+  width: 150px ;
+  /* margin: 10px ; */
+}
+
+/*
+flex-grow BY DEFAULT 'ZERO' 
+first - flex-grow: 1
+second - flex-grow: 2
+
+empty space in line of boxes(100%) distributed bw first and second with RATIO 1: 2 ie first(33.33%) second(66.66%)
+*/
+
+.first {
+  background-color: red ;
+
+  /* flex-grow: 1 ; */
+
+  /* flex-shrink: 4 ;  */
+  /* by default flex-shrink: 1 and all boxes shrink with equally speed */
+  /* flex-shrink: 4 means This(first) boxe shrink with 4 times speed of OTHER BOXES*/
+
+  /* flex-basis: 500px ; */
+  /* WORKS ALONG main axis */
+  /* flex-basis: 200px ; WIDTH(since flex-direction: row;) of box is OVERRIDDEN by 200px */
+}
+
+.second {
+  background-color: yellow ;
+
+  /* flex-grow: 2 ; */
+}
+
+.third {
+  background-color: green ;
+
+  align-self: flex-end ;
+  /* breaks normal flow and special flexing for This(third) box*/
+  /* flex-start; flex-end*/
+}
+
+.fourth {
+  background-color: blue ;
+
+  
+}

@@ -1,0 +1,31 @@
+flex-direction :    row(default) left->right 1 2 3 4
+                    row-reverse(right->left) 4 3 2 1
+                    column
+                    column-reverse
+
+
+flex -- 
+containers will fix themselves into the container 
+till font-size content allows 
+
+
+Flex properties for flex container 
+justify-content:    flex-end ;
+                    flex-start
+                    space-around 
+                    space-between
+                    space-evenly
+
+
+align-content ==> leave no space between contents while aligning
+align-item ==> leaves space
+
+
+align-self : flex-end ; 
+particular item flexed seprately 
+
+items grow and shrink gradually with space 
+flex-shrink: 2 ; // shrink twice of other
+no shrink at any cost of decrease in size 
+flex-shrink : 0 ;
+

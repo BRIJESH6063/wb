@@ -1,0 +1,41 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.navbar {
+    background-color: pink ;
+    display: flex ;
+    justify-content: space-evenly ;
+
+}
+
+a {
+    text-decoration: none ;
+    color: red ;
+    font-size: 25px ;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.outer {
+    width: 1000px  ;
+    height: 500px ;
+    border: 2px solid black ;
+    margin: 100px 250px ;
+    background-color: pink ;
+    display: flex ;
+    justify-content: center ; /* horizontal alignment */
+    align-items: center ; /* vertically alignment */
+}
+
+.inner{
+    width: 300px ;
+    height: 200px ;
+    background-color: white ;
+    border: 1px solid red ;
+    
+}

@@ -1,0 +1,61 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    background-color: rgb(226, 223, 217) ;
+}
+
+.box {
+    width: 200px ;
+    height: 200px ;
+    margin: 300px 400px ;
+    border: 1.5px solid black ;
+    background-color: rgb(197, 144, 63) ;
+    font-size: 20px ;
+    border-radius: 50% ;
+    /* transition: all 2s linear 0s ;
+    transform: rotate(180deg); */
+    transition: all 2s linear 0s ;
+    
+
+}
+
+.box:hover {
+    /* background-color: rgb(226, 132, 51) ;
+    width: 800px ;
+    color: white ; */
+    /* font-size: 30px ; */
+    /* transform: scaleX(2);
+    transform: scaleY(2); */
+    /* transform: scale(2) ; */
+    /* transform: rotate(180deg) ; */
+    /* transform: translate(90px);  */
+    /* transform: translate(90px, 70px) ; */
+    /* transform: translateX(90px); */
+    /* transform: translateY(-90px); */
+    /* transform: skew(30deg) ; */
+
+    /* animation-name: translateX ;
+    animation-duration: 1s ;
+    animation-timing-function: linear ;
+    animation-delay: 0s ;
+    animation-iteration-count: infinite ;
+    animation-direction: reverse ; */
+
+    animation: translateX 1s linear 0s infinite normal ;
+
+
+}
+
+@keyframes ColorChange {
+    from { background-color: white ;}
+    to { 
+        background-color: red ;
+        color: white ;
+    }
+}
+
+
+@keyframes translateX {
+    from { transform: translateX(0px); }
+    to { transform: translateX(100px); }
+}

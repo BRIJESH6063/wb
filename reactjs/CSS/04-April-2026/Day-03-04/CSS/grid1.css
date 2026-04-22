@@ -1,0 +1,47 @@
+* {
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  background-color: rgb(77, 77, 76) ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+.container {
+
+  padding: 10px ;
+  background-color: greenyellow ;
+  
+  display: grid ;
+  /* grid-template-rows: 200px 200px ;
+     grid-template-columns: 300px 300px ; */
+  grid-template-rows: 1fr 1fr ; /* ration 1:1 equal in rows */
+  grid-template-columns: 1fr 1fr ; /* ration 1:1 equal in columns */
+
+  height: 400px ; /* overflow without fraction method ie. 1fr*/
+  width: 400px ;
+  
+  gap: 10px ;
+
+}
+
+.first {
+  background-color: red ;
+}
+
+.second {
+  background-color: green ;
+}
+
+.third {
+  background-color: yellow ;
+}
+
+.fourth {
+  background-color: blueviolet ;
+}

@@ -1,0 +1,44 @@
+.audio .head {
+  font-size: 40px ;
+  text-align: center ;
+  color: white ;
+  margin: 30px ;
+}
+
+.audio .aud-item {
+  margin: 40px 30vw ;
+  border-radius: 30px ;
+}
+
+.audio-box {
+  border: 2px solid black ;
+  border-radius: 10px ;
+  width: 80% ;
+  margin: 50px 180px ;
+  background-image: linear-gradient(to right, rgb(219, 156, 156) , yellow);
+}
+
+/* ---------------------------  */
+
+.video .head {
+  font-size: 40px ;
+  text-align: center ;
+  color: white ;
+  margin: 30px ;
+}
+
+.video .vid-item {
+  width: 50% ;
+  height: 50% ;
+  border: 3px solid rgb(225, 222, 50) ;
+  border-radius: 10px ;
+  margin: 30px 300px ;
+}
+
+.video-box {
+  border: 2px solid black ;
+  border-radius: 10px ;
+  width: 80% ;
+  margin: 50px 180px ;
+  background-image: linear-gradient(to right, rgb(219, 156, 156) , yellow);
+}

@@ -1,0 +1,49 @@
+*{
+  padding: 0px ;
+  margin: 0px ;
+}
+
+body {
+  background-color: rgb(72, 71, 71) ;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+
+  display: flex ;
+  justify-content: center ;
+
+}
+
+.container {
+  width: 65% ;
+  margin-top: 40px ;
+  background-color: rgb(40, 40, 40) ;
+  border-radius: 5px ;
+
+  padding: 30px ;
+  white-space: nowrap ; /* dont show extra content in multiple lines -- OVERFLOW is allowed */
+  overflow: hidden ;
+}
+
+p {
+  font-size: 30px ;
+  color: white ;
+
+  /* margin-left: 100% ; goes completely out of the box */
+  margin-left: 100% ;
+
+  animation-name: moving ;
+  animation-duration: 6s ;
+  animation-iteration-count: infinite ;
+}
+
+@keyframes moving {
+  from {
+    margin-left: 100% ;
+  }
+  to {
+    margin-left: -100% ;
+  }
+}
