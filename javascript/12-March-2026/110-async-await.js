@@ -97,12 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //   .then(data => console.log(data))
   //   .catch(err => console.log("kucchhh to fataa h!!")) ;
 
-
-
-
-
-
-
 });
 
 // https://www.youtube.com/watch?v=sOZwwL_-cBA&list=PL_HlKez9XCSM0bs8P7LtCTGh4rghAD2im

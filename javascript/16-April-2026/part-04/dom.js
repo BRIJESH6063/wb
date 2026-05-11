@@ -92,18 +92,18 @@ s1.remove() ;
 
 */
 
-// const products = ['Milk', 'Chocolate', 'Honey', 'Tea', 'Sugar'] ;
-// const unorderedList = document.getElementById('uList') ;
-// const fragment = document.createDocumentFragment() ;
-// products.forEach((prod) => {
-//     const list = document.createElement('li') ;
-//     list.textContent=prod ;
-//     fragment.append(list) ;
-// })
-// unorderedList.append(fragment) ;
+/*
 
-
-
+const products = ['Milk', 'Chocolate', 'Honey', 'Tea', 'Sugar'] ;
+const unorderedList = document.getElementById('uList') ;
+const fragment = document.createDocumentFragment() ;
+products.forEach((prod) => {
+    const list = document.createElement('li') ;
+    list.textContent=prod ;
+    fragment.append(list) ;
+})
+unorderedList.append(fragment) ;
+*/
 
 /*
 const week = document.getElementById('week') ;

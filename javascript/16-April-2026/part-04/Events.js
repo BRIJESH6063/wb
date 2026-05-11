@@ -140,16 +140,19 @@ grandParent.addEventListener('click', handleClick ) ;
 
 
 
-// const grandParent = document.getElementById('grandparent') ;
+/*
+const grandParent = document.getElementById('grandparent') ;
 
-// const handleClick = (event) => {
-//   console.log(event.target) ;
-//   console.log('GRANDPARENT is clicked!') ;
+const handleClick = (event) => {
+  console.log(event.target) ;
+  console.log('GRANDPARENT is clicked!') ;
 
-//   grandParent.removeEventListener('click', handleClick ) ; // runs only one time
-// } ;
+  grandParent.removeEventListener('click', handleClick ) ; // runs only one time
+} ;
 
-// grandParent.addEventListener('click', handleClick ) ;
-// // grandParent.removeEventListener('click', handleClick ) ;
+grandParent.addEventListener('click', handleClick ) ;
+// grandParent.removeEventListener('click', handleClick ) ;
+
+*/
 
 

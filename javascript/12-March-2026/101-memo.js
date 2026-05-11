@@ -11,10 +11,13 @@ function twoPoweredN(a) {
   }
   return ans ;
 }
-// console.time() ;
-// const tpn = twoPoweredN(10) ;
-// console.timeEnd() ;
-// console.log(tpn) ;
+/*
+console.time() ;
+const tpn = twoPoweredN(10) ;
+console.timeEnd() ;
+console.log(tpn) ;
+
+*/
 
 
 function memoizeTwoPoweredN(fun) {

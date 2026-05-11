@@ -15,8 +15,7 @@ const fun2 = () => {
 */
 
 
-// CURRYING
-
+/*  CURRYING  */ 
 function fun (a) {
   return function(b) {
     return function(c) {
@@ -25,15 +24,17 @@ function fun (a) {
   }
 }
 
-// const x = fun(12) ;
-// const xx = x(24) ;
-// const xxx = xx(36) ;
-// console.log(xxx) ;
+/*
+const x = fun(12) ;
+const xx = x(24) ;
+const xxx = xx(36) ;
+console.log(xxx) ;
+*/
 
-const x = fun(12)(24)(36) ;  // ---- currying method
-// console.log(x) ;
+const x = fun(12)(24)(36) ;  /* ---- currying method  */
+/* console.log(x) ; */
 
-// EXAMPLE - 2
+/* EXAMPLE - 2 */ 
 const userObj = {
   name: "anuj shukla" ,
   age: 34
@@ -45,29 +46,36 @@ function findUserData(obj) {
   }
 }
 
-// const X = findUserData(userObj) ;
-// const XX = X("name") ;
-// console.log(XX) ;
+/*
+const X = findUserData(userObj) ;
+const XX = X("name") ;
+console.log(XX) ;
 
-// const X = findUserData(userObj)("age") ;
-// console.log(X) ;
-// console.log(findUserData(userObj)("name")) ;
+const X = findUserData(userObj)("age") ;
+console.log(X) ;
+console.log(findUserData(userObj)("name")) ;
+
+*/
 
 
-// INFINITE CURRYING ------
-// function add(a) {
-//   return function (b) {
-//     return function() {
-//       return a+b ;
-//     }
-//   }
-// }
 
-// const A = add(12)(11)() ;
-// // const A = add(12)(11)(2)(1)() ; -- error as we need to change add function to get further addition.
-// console.log(A) ;
+/*  INFINITE CURRYING ------  */
+/*  
+function add(a) {
+  return function (b) {
+    return function() {
+      return a+b ;
+    }
+  }
+}
 
-// SMART ADDITION FUNCTION -- recursive addition
+const A = add(12)(11)() ;
+const A = add(12)(11)(2)(1)() ; // -- error as we need to change add function to get further addition.
+console.log(A) ;
+*/
+
+
+/*  SMART ADDITION FUNCTION -- recursive addition  */
 function add(a) {
   return function(b) {
     if(b) return add(a+b) ;
@@ -75,5 +83,7 @@ function add(a) {
   }
 }
 
-// const A = add(12)(11)(2)(1)() ;
-// console.log(A) ;
+/*
+const A = add(12)(11)(2)(1)() ;
+console.log(A) ;
+*/

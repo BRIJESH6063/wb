@@ -219,10 +219,13 @@ async function fetchData () {
 */
 
 
+/*
+fetchData() ;
 
-// fetchData() ;
+fetch('https://dummyjson.com/users')
+  .then(response => response.json()) 
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error)); 
 
-// fetch('https://dummyjson.com/users')
-//   .then(response => response.json()) 
-//   .then(data => console.log(data))
-//   .catch(error => console.error('Error:', error)); 
+*/
+
